@@ -45,18 +45,20 @@
   };
 </script>
 
-  <meta name="description" content="centos7官方镜像是没有ssh的，需要自己安装配置。首先安装： 1yum install openssh* -y 启动： 1usr&#x2F;sbin&#x2F;sshd 发现报错如下： 1[root@78812d8146a9 &#x2F;]# &#x2F;usr&#x2F;sbin&#x2F;sshd2Could not load host key: &#x2F;etc&#x2F;ssh&#x2F;ssh_host_rsa_key3Could not load host key:">
-<meta name="keywords" content="Linux,Docker">
+  <meta name="description" content="哈希Java8中HashMap的hash()方法： 1static final int hash(Object key) &amp;#123;2        int h;3        return (key &#x3D;&#x3D; null) ? 0 : (h &#x3D; key.hashCode()) ^ (h &amp;gt;&amp;gt;&amp;gt; 16);4    &amp;#125;  可以看到hash方法返回一个int类型的散列值。这个">
+<meta name="keywords" content="Java,数据结构">
 <meta property="og:type" content="article">
-<meta property="og:title" content="centos7容器配置ssh服务">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;06&#x2F;centos7%E5%AE%B9%E5%99%A8%E9%85%8D%E7%BD%AEssh%E6%9C%8D%E5%8A%A1&#x2F;index.html">
+<meta property="og:title" content="Java集合(一)HashMap">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;10&#x2F;Java%E9%9B%86%E5%90%88-%E4%B8%80-HashMap&#x2F;index.html">
 <meta property="og:site_name" content="诺维格瑞打铁匠">
-<meta property="og:description" content="centos7官方镜像是没有ssh的，需要自己安装配置。首先安装： 1yum install openssh* -y 启动： 1usr&#x2F;sbin&#x2F;sshd 发现报错如下： 1[root@78812d8146a9 &#x2F;]# &#x2F;usr&#x2F;sbin&#x2F;sshd2Could not load host key: &#x2F;etc&#x2F;ssh&#x2F;ssh_host_rsa_key3Could not load host key:">
+<meta property="og:description" content="哈希Java8中HashMap的hash()方法： 1static final int hash(Object key) &amp;#123;2        int h;3        return (key &#x3D;&#x3D; null) ? 0 : (h &#x3D; key.hashCode()) ^ (h &amp;gt;&amp;gt;&amp;gt; 16);4    &amp;#125;  可以看到hash方法返回一个int类型的散列值。这个">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-12-10T13:52:25.994Z">
+<meta property="og:image" content="http:&#x2F;&#x2F;q20x4yxwt.bkt.clouddn.com&#x2F;hashmap-1.png">
+<meta property="og:updated_time" content="2019-12-11T06:29:50.904Z">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;q20x4yxwt.bkt.clouddn.com&#x2F;hashmap-1.png">
 
-<link rel="canonical" href="http://yoursite.com/2019/12/06/centos7%E5%AE%B9%E5%99%A8%E9%85%8D%E7%BD%AEssh%E6%9C%8D%E5%8A%A1/">
+<link rel="canonical" href="http://yoursite.com/2019/12/10/Java%E9%9B%86%E5%90%88-%E4%B8%80-HashMap/">
 
 
 <script id="page-configurations">
@@ -70,7 +72,7 @@
   };
 </script>
 
-  <title>centos7容器配置ssh服务 | 诺维格瑞打铁匠</title>
+  <title>Java集合(一)HashMap | 诺维格瑞打铁匠</title>
   
 
 
@@ -174,7 +176,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/06/centos7%E5%AE%B9%E5%99%A8%E9%85%8D%E7%BD%AEssh%E6%9C%8D%E5%8A%A1/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/10/Java%E9%9B%86%E5%90%88-%E4%B8%80-HashMap/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/me.jpg">
@@ -187,7 +189,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          centos7容器配置ssh服务
+          Java集合(一)HashMap
         </h1>
 
         <div class="post-meta">
@@ -197,14 +199,14 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2019-12-06 14:52:25" itemprop="dateCreated datePublished" datetime="2019-12-06T14:52:25+08:00">2019-12-06</time>
+              <time title="创建时间：2019-12-10 21:28:26" itemprop="dateCreated datePublished" datetime="2019-12-10T21:28:26+08:00">2019-12-10</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-12-10 21:52:25" itemprop="dateModified" datetime="2019-12-10T21:52:25+08:00">2019-12-10</time>
+                <time title="修改时间：2019-12-11 14:29:50" itemprop="dateModified" datetime="2019-12-11T14:29:50+08:00">2019-12-11</time>
               </span>
 
           
@@ -220,14 +222,14 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>569</span>
+              <span>1.1k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
+              <span>2 分钟</span>
             </span>
 
         </div>
@@ -239,20 +241,21 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>centos7官方镜像是没有ssh的，需要自己安装配置。<br>首先安装：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">yum install openssh* -y</span></pre></td></tr></table></figure>
-<p>启动：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">usr/sbin/sshd</span></pre></td></tr></table></figure>
-<p>发现报错如下：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">[root@78812d8146a9 /]<span class="comment"># /usr/sbin/sshd</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">Could not load host key: /etc/ssh/ssh_host_rsa_key</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">Could not load host key: /etc/ssh/ssh_host_ecdsa_key</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">Could not load host key: /etc/ssh/ssh_host_ed25519_key</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">sshd: no hostkeys available -- exiting.</span></pre></td></tr></table></figure>
-<p>所以生成秘钥：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -f /etc/ssh/ssh_host_rsa_key -P <span class="string">''</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -f /etc/ssh/ssh_host_ecdsa_key -P <span class="string">''</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -f /etc/ssh/ssh_host_ed25519_key -P <span class="string">''</span></span></pre></td></tr></table></figure>
+        <h1 id="哈希"><a href="#哈希" class="headerlink" title="哈希"></a>哈希</h1><p>Java8中HashMap的hash()方法：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">int</span> <span class="title">hash</span><span class="params">(Object key)</span> </span>&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">        <span class="keyword">int</span> h;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">        <span class="keyword">return</span> (key == <span class="keyword">null</span>) ? <span class="number">0</span> : (h = key.hashCode()) ^ (h &gt;&gt;&gt; <span class="number">16</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">    &#125;</span></pre></td></tr></table></figure>
 
-<p>配置localhost免密：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -P <span class="string">''</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">cat ~/.ssh/id_rsa.pub &gt;&gt; ~/.ssh/authorized_keys</span></pre></td></tr></table></figure>
-<p>重新启动：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">usr/sbin/sshd</span></pre></td></tr></table></figure>
-<p>ssh 127.0.0.1，连接成功。</p>
+<p>可以看到hash方法返回一个int类型的散列值。这个散列值与对象初始hashcode相比：</p>
+<ul>
+<li>高16位不变</li>
+<li>低16位与高16位做异或运算，得到新的低16位<br>这样得到一个32位的int类型新散列值。为什么不直接使用key的hashcode的呢？</li>
+</ul>
+<p>在HashMap的putVal方法中，可以看到插入值的index算法：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> ((p = tab[i = (n - <span class="number">1</span>) &amp; hash]) == <span class="keyword">null</span>)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">            tab[i] = newNode(hash, key, value, <span class="keyword">null</span>);</span></pre></td></tr></table></figure>
+
+<p>也就是说实际上的插入地址为（n-1)&amp;hash，这里的n为哈希表长度。Hashmap习惯将表的大小设为2的幂，这样n-1相当于一个低位掩码，(n-1)&amp;hash 的结果实际上就是hash的低位。因为n-1是低位掩码，所以(n-1)&amp;hash的结果总是小于n，用&amp;运算来代替%运算，效率提高了好几倍。这也是为什么我们在使用HashMap时，其长度应该取2的整次幂。</p>
+<p>但是只取后几位的话，无疑会提高碰撞率。再回过头来看hash()方法，这样产生的散列值打乱了参与运算的低16位，此时的低位混合了原来的高位和低位，加大了低位的随机性，降低了哈希冲突的概率。</p>
+<h1 id="查找"><a href="#查找" class="headerlink" title="查找"></a>查找</h1><p>JDK1.8中引入了红黑树来提升链表的查询效率。链表查找的平均时间为复杂度O(n)， 红黑树则为O(logn)。为链表的长度超过8以后，红黑树的查找速度比链表高。所以链表长度超过8后，HashMap会将链表转化为红黑树。当然小于6时，HashMap也会将红黑树转换为链表。</p>
+<h1 id="扩容"><a href="#扩容" class="headerlink" title="扩容"></a>扩容</h1><p>JDK1.8中扩容不需要再rehash，转而使用了一种很巧妙的方法。扩容数组的长度是两倍的关系。比如大小为4，那么扩容大小就会变成8。也就是0100变成1000，那么n-1由0011变为0111。根据上面讲过的（n-1)&amp;hash算法，也就是说，扩容后key的新地址，实际上就是hash方法算出来的值多取了一个高位bit。如果高位是0，那么索引不变。如果高位是1，索引就变成原来索引加上原来的表大小。下图是hashmap大小由16扩充为32的示意图，来自美团点评技术博客。<br><img src="http://q20x4yxwt.bkt.clouddn.com/hashmap-1.png" alt=""><br>这个设计非常巧妙，省去了重新计算哈希的时间。同时由于新增的0bit和1bit可以认为是随机的，这样扩容后就把之前的节点均匀的散列到哈希表中。扩容后，节点链表的前后关系不会变。</p>
 
     </div>
 
@@ -268,7 +271,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="/http:/yoursite.com/2019/12/06/centos7%E5%AE%B9%E5%99%A8%E9%85%8D%E7%BD%AEssh%E6%9C%8D%E5%8A%A1/" title="centos7容器配置ssh服务">http://yoursite.com/2019/12/06/centos7容器配置ssh服务/</a>
+    <a href="/http:/yoursite.com/2019/12/10/Java%E9%9B%86%E5%90%88-%E4%B8%80-HashMap/" title="Java集合(一)HashMap">http://yoursite.com/2019/12/10/Java集合-一-HashMap/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -279,8 +282,8 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/Linux/" rel="tag"># Linux</a>
-              <a href="/tags/Docker/" rel="tag"># Docker</a>
+              <a href="/tags/Java/" rel="tag"># Java</a>
+              <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" rel="tag"># 数据结构</a>
           </div>
 
         
@@ -289,13 +292,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2019/12/05/deepin-wine-%E5%BE%AE%E4%BF%A1%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3/" rel="prev" title="deepin-wine 微信乱码解决">
-      <i class="fa fa-chevron-left"></i> deepin-wine 微信乱码解决
+    <a href="/2019/12/06/centos7%E5%AE%B9%E5%99%A8%E9%85%8D%E7%BD%AEssh%E6%9C%8D%E5%8A%A1/" rel="prev" title="centos7容器配置ssh服务">
+      <i class="fa fa-chevron-left"></i> centos7容器配置ssh服务
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2019/12/10/Java%E9%9B%86%E5%90%88-%E4%B8%80-HashMap/" rel="next" title="Java集合(一)HashMap">
-      Java集合(一)HashMap <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -333,6 +333,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#哈希"><span class="nav-number">1.</span> <span class="nav-text">哈希</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#查找"><span class="nav-number">2.</span> <span class="nav-text">查找</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#扩容"><span class="nav-number">3.</span> <span class="nav-text">扩容</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
