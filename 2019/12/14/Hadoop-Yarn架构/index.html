@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 4.0.0">
+<meta name="generator" content="Hexo 4.1.1">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
@@ -46,16 +46,19 @@
 </script>
 
   <meta name="description" content="说明了解Yarn架构之前，先要了解两个概念。  作业。也可称为应用程序，包含一个或多个任务。 任务。在运行MapReduce时，一个任务可以使一个Mapper或一个Reducer。  Yarn关键组件 ResourceManagerResourceManager由两个关键组件Scheduler和ApplicationsManager组成。 SchedulerScheduler在容量和队列限制范围内">
-<meta name="keywords" content="Hadoop,Yarn">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hadoop Yarn架构">
 <meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;14&#x2F;Hadoop-Yarn%E6%9E%B6%E6%9E%84&#x2F;index.html">
 <meta property="og:site_name" content="诺维格瑞打铁匠">
 <meta property="og:description" content="说明了解Yarn架构之前，先要了解两个概念。  作业。也可称为应用程序，包含一个或多个任务。 任务。在运行MapReduce时，一个任务可以使一个Mapper或一个Reducer。  Yarn关键组件 ResourceManagerResourceManager由两个关键组件Scheduler和ApplicationsManager组成。 SchedulerScheduler在容量和队列限制范围内">
-<meta property="og:locale" content="zh-CN">
+<meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http:&#x2F;&#x2F;q20x4yxwt.bkt.clouddn.com&#x2F;Yarn&#x2F;1.png">
 <meta property="og:image" content="http:&#x2F;&#x2F;q20x4yxwt.bkt.clouddn.com&#x2F;Yarn&#x2F;3.jpg">
-<meta property="og:updated_time" content="2019-12-14T13:08:15.469Z">
+<meta property="article:published_time" content="2019-12-14T07:44:31.000Z">
+<meta property="article:modified_time" content="2019-12-14T13:08:15.469Z">
+<meta property="article:author" content="GKCY">
+<meta property="article:tag" content="Hadoop">
+<meta property="article:tag" content="Yarn">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http:&#x2F;&#x2F;q20x4yxwt.bkt.clouddn.com&#x2F;Yarn&#x2F;1.png">
 
@@ -294,7 +297,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="/http:/yoursite.com/2019/12/14/Hadoop-Yarn%E6%9E%B6%E6%9E%84/" title="Hadoop Yarn架构">http://yoursite.com/2019/12/14/Hadoop-Yarn架构/</a>
+    <a href="http://yoursite.com/2019/12/14/Hadoop-Yarn%E6%9E%B6%E6%9E%84/" title="Hadoop Yarn架构">http://yoursite.com/2019/12/14/Hadoop-Yarn架构/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -433,7 +436,7 @@
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
     <span title="站点阅读时长">12 分钟</span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v4.0.0
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v4.1.1
   </div>
   <span class="post-meta-divider">|</span>
   <div class="theme-info">主题 – <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> v7.6.0
@@ -476,9 +479,17 @@
   <script src="/lib/anime.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
-<script src="/js/utils.js"></script><script src="/js/motion.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
 <script src="/js/schemes/pisces.js"></script>
+
+
 <script src="/js/next-boot.js"></script>
+
 
 
 
